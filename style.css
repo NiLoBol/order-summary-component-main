@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif !important;
+  font-weight: 400;
+  background-color: var(--Paleblue) !important;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: 50rem;
+}
+.card {
+  width: 30%;
+}
+h1 {
+  font-size: 1.75rem !important;
+  font-weight: 900 !important;
+}
+h2 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+}
+.alert-secondary {
+  background-color: var(--Verypaleblue) !important;
+}
+.Brightblue{
+  color: var(--Brightblue) !important;
+}
+.Change{
+  font-weight: 700!important;
+}
+.Change:hover{
+  text-decoration:none;
+  opacity: 0.8;
+}
+
+.btn-primary{
+  --bs-btn-bg: var(--Brightblue) !important;
+  --bs-btn-color: var(--Verypaleblue) !important;
+  --bs-btn-hover-bg: hsla(245, 75%, 52%, 0.8) !important;
+  
+}
+.btn-primary:hover{
+  box-shadow: 2px 30px 50px -10px hsla(245, 75%, 52%, 0.5);
+}
+
+.card-text {
+  color: var(--Desaturatedblue) !important;
+}
+.btn:first-child:active.btn-primary{
+  background-color:  hsla(245, 75%, 52%, 0.8) !important;
+  color: var(--Verypaleblue) !important;
+  border: unset !important;
+}
+.btn:first-child:active{
+  background-color:  unset !important;
+  color: unset !important;
+  border: unset !important;
+}
+.btn{
+  --bs-btn-border-width: 0px !important;
+}
+@media (max-width:425px) {
+
+  .card {
+    width: 90%;
+  }
+  .px-3{
+    padding: 0px !important;
+  }
+  .m-auto{
+    margin: 0px !important;
+  }
+}
